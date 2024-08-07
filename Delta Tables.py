@@ -24,8 +24,7 @@
 # MAGIC ###Views
 # MAGIC - All views in Databricks compute results from source datasets as they are queried, leveraging caching optimizations when available. 
 # MAGIC - Delta Live Tables does not publish views to the catalog, so views can be referenced only within the pipeline in which they are defined. 
-# MAGIC - Views are useful as intermediate queries that should not be exposed to end users or systems. 
-# MAGIC
+# MAGIC - Views are useful as intermediate queries that should not be exposed to end users or systems.
 # MAGIC
 
 # COMMAND ----------
