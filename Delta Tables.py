@@ -106,12 +106,74 @@ df_details[['location']].show()
 
 # COMMAND ----------
 
-# MAGIC %sql
-# MAGIC DESCRIBE DETAIL employees
+# MAGIC %md
+# MAGIC ### DESCRIBE DETAILS 
+# MAGIC
 
 # COMMAND ----------
 
-# MAGIC %fs ls 'abfss://unity-catalog-storage@dbstorageyryifdjvviqpm.dfs.core.windows.net/1358913073911209/__unitystorage/catalogs/5545b94c-46ee-41c3-ae03-c264546b7714/tables/639de2ed-ea80-40d9-a120-beb4b2a9460f'
+# MAGIC %sql
+# MAGIC DESCRIBE DETAIL employees
+# MAGIC
+# MAGIC -- this is where the table is https://adb-1358913073911209.9.azuredatabricks.net/explore/data/demoworkspace/default/employees?o=1358913073911209
+
+# COMMAND ----------
+
+# MAGIC %fs ls 'abfss://unity-catalog-storage@dbstorageyryifdjvviqpm.dfs.core.windows.net/'
+
+# COMMAND ----------
+
+dbutils.fs.ls('abfss://unity-catalog-storage@dbstorageyryifdjvviqpm.dfs.core.windows.net/1358913073911209/__unitystorage/catalogs/5545b94c-46ee-41c3-ae03-c264546b7714/tables/639de2ed-ea80-40d9-a120-beb4b2a9460f')
+
+# COMMAND ----------
+
+dbutils.fs.ls('abfss://unity-catalog-storage@dbstorageyryifdjvviqpm.dfs.core.windows.net/1358913073911209/__unitystorage/catalogs/5545b94c-46ee-41c3-ae03-c264546b7714/tables/')
+
+# COMMAND ----------
+
+# MAGIC %fs ls 'dbfs:/'
+
+# COMMAND ----------
+
+# MAGIC %fs ls 'dbfs:/databricks-datasets'
+
+# COMMAND ----------
+
+# MAGIC %fs ls 'dbfs:/vaaibhavkumarjs/' 
+
+# COMMAND ----------
+
+# MAGIC %md
+# MAGIC #### SHOW CREATE TABLE
+
+# COMMAND ----------
+
+# MAGIC %sql
+# MAGIC SHOW CREATE TABLE employees
+
+# COMMAND ----------
+
+# MAGIC %md
+# MAGIC ### DESCRIBE HISTORY 
+
+# COMMAND ----------
+
+# MAGIC %sql
+# MAGIC DESCRIBE HISTORY employees
+
+# COMMAND ----------
+
+# MAGIC %fs ls 'dbfs:/user/hive/'
+
+# COMMAND ----------
+
+# MAGIC %py
+# MAGIC help ("DESCRIBE") 
+
+# COMMAND ----------
+
+# MAGIC %md
+# MAGIC
 
 # COMMAND ----------
 
