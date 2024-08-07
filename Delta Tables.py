@@ -39,11 +39,7 @@
 # MAGIC 1. ACID transactions to object storage
 # MAGIC 2. Audit trail of changes is pesent
 # MAGIC 3. Industry standard  dat aformats are used: Parquet and JSON
-# MAGIC 4. Handles Scalable Metadata
-
-# COMMAND ----------
-
-
+# MAGIC 4. Handles Scalable Metadata 
 
 # COMMAND ----------
 
